@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="container">
+        <header class="header-card">
+            <div class="profile-wrapper">
+                <img src="me.jpg" alt="Asylkhan Tolganai" class="profile-img">
+                <div class="profile-text">
+                    <h1 id="main-heading">Asylkhan Tolganai</h1>
+                    <p class="subtitle">Software Engineering Student</p>
+                    <p class="location-tag">📍 18 years old, Shymkent</p>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main class="main-content">
+            <section class="card">
+                <h2>About Me</h2>
+                <p style="color: #000000;" class="bio">
+                    I am a software engineering student interested in creating useful software, learning new technologies, and improving my programming skills. I enjoy exploring different areas of IT and developing my technical knowledge. I am always trying to learn something new and become better at what I do.
+
+
+                </p>
+            </section>
+
+
+            <div class="grid-2col">
+                <section class="card">
+                    <h2>My Hobbies</h2>
+                    <ol class="styled-list">
+                        <li><span>💻</span> Coding & Building Projects</li>
+                        <li><span>🎬</span> watching movies</li>
+                        <li><span>🎨</span> Drawing</li>
+                    </ol>
+                </section>
+
+
+                <section class="card">
+                    <h2>Favorite Websites</h2>
+                    <ul class="styled-list unstyled">
+                        <li><a href="https://www.google.com" target="_blank" class="link-btn">🔍 Google</a></li>
+                        <li><a href="https://github.com" target="_blank" class="link-btn">🐙 GitHub</a></li>
+                        <li><a href="https://www.netflix.com" target="_blank" class="link-btn">🎬 Netflix</a></li>
+                    </ul>
+                </section>
+            </div>
+
+
+
+
+            <section class="card text-center">
+            <h3>Do you like my website? 😊</h3>
+            <p style="margin-bottom: 12px; color: #64748b;">Т>Click the button to let me know!</p>
+            <button type="button" class="btn" onclick="showFeedback()">Yes!✨</button>
+            <p id="quiz-result" class="quiz-text"></p>
+            </section>
+
+
+            <section class="card">
+                <h2>Weekly Schedule</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web Technologies 1</td>
+                                <td>Wednesday</td>
+                                <td>14:00 - 16:00</td>
+                            </tr>
+                            <tr>
+                                <td>Software Design Patterns</td>
+                                <td>Monday</td>
+                                <td>12:00 - 14:00</td>
+                            </tr>
+                            <tr>
+                                <td>Design and Analysis of Algorithms</td>
+                                <td>Friday</td>
+                                <td>18:00 - 20:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+
+            <section class="card">
+                <h2>Today's Mood</h2>
+                <p class="highlight">
+                    chill, happy, motivated. ✨!
+                </p>
+            </section>
+
+
+
+            <section class="card">
+                <h2>Contact Form</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+
+                    <div class="form-group inline-group">
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color" value="#4f46e5">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-submit">Submit Form</button>
+                </form>
+            </section>
+
+
+            <!-- CSS Demonstration (Positioning & Float) -->
+            <section class="card">
+                <h2>CSS Layout Demo (Float & Positioning)</h2>
+                <div class="float-container">
+                    <div class="box float-left">Float Left Box</div>
+                    <div class="box float-right">Float Right Box</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="relative-box">Relative Positioned Box</div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+            function showFeedback() {
+                const resultElement = document.getElementById('quiz-result');
+                resultElement.innerHTML = "Thank you! ❤️ I'm glad you're here!";
+                resultElement.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
